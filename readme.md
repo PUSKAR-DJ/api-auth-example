@@ -132,4 +132,23 @@ module.exports = function (req, res, next) {
 
 ---
 
-This concludes the setup for a simple token-based authentication system using Express.js and JWT.  
+## 🛠️ Additional Setup Instructions
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/PUSKAR-DJ/api-auth-example.git
+   cd api-auth-example
+   ```
+
+2. **Create a `.env` File**
+   - Add the following content to a new `.env` file in the root directory:
+     ```env
+     SECRET_KEY=my_super_secret_key
+     ```
+
+3. **Refer to the Guide**
+   - Open the `API_Auth_ExpressJS_Guide.pdf` file in the repository for a detailed explanation of the implementation.
+
+4. **Import Postman Collection**
+   - Open Postman and import the `Postman/Express JWT Auth API.postman_collection.json` file.
+   - Use the collection to test the API endpoints as described in the guide.

@@ -1,0 +1,19 @@
+{
+  "name": "api-auth-example",
+  "version": "1.0.0",
+  "description": "This guide demonstrates how to implement token-based authentication using **JWT (JSON Web Tokens)** in an **Express.js** application. Follow the steps below to set up a secure API authentication system.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}

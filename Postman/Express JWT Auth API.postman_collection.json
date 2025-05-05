@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "75a2a395-df4f-47c3-8c1b-e4c237d423a9",
+		"name": "Express JWT Auth API",
+		"description": "StartFragmentThis collection demonstrates token-based authentication using JWT in an Express.js API. It includes routes for user login and accessing a protected dashboard. Use the `/login` endpoint to obtain a token, then include it in the `Authorization` header to access `/dashboard`. Suitable for learning or implementing secure API access in Node.js projects.EndFragment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43800398",
+		"_collection_link": "https://pastos101.postman.co/workspace/Pastos101's-Workspace~9a58b0c2-db31-4d83-8c9e-6810af3e8629/collection/43800398-75a2a395-df4f-47c3-8c1b-e4c237d423a9?action=share&source=collection_link&creator=43800398"
+	},
+	"item": [
+		{
+			"name": "Get a Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"admin\",\r\n  \"password\": \"admin123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Access Protected Content",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ2NDMxODQyLCJleHAiOjE3NDY0MzU0NDJ9.sVEqtjMf_In0ne0OkdfyWajLbd6FuAzF3xcv6_vjVTE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/dashboard",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"dashboard"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

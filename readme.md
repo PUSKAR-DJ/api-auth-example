@@ -22,8 +22,8 @@ api-auth-example/
 ## 1️⃣ Clone the Repository
 
 ```bash
-   git clone https://github.com/PUSKAR-DJ/api-auth-example.git
-   cd api-auth-example
+git clone https://github.com/PUSKAR-DJ/api-auth-example.git
+cd api-auth-example
 ```
 ---
 

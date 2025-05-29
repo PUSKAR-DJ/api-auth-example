@@ -1,4 +1,4 @@
-![Logo](assets\jwt_logo.png " Express.js API Authentication with JWT – Mini Example")
+![Logo](assets/jwt_logo.png " Express.js API Authentication with JWT – Mini Example")
 
 
 # 🔐 Express.js API Authentication with JWT – Mini Example

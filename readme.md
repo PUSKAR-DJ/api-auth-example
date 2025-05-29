@@ -1,3 +1,6 @@
+![Logo](assets\jwt_logo.png " Express.js API Authentication with JWT – Mini Example")
+
+
 # 🔐 Express.js API Authentication with JWT – Mini Example
 
 This guide demonstrates how to implement token-based authentication using **JWT (JSON Web Tokens)** in an **Express.js** application. Follow the steps below to set up a secure API authentication system.
